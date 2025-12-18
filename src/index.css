@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/600.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/source-sans-pro/400.css';
+@import '@fontsource/source-sans-pro/600.css';
+@import '@fontsource/source-sans-pro/700.css';
+
+/* NGETI 2026 Conference Design System - Modern Professional Theme */
+
+@layer base {
+  :root {
+    /* Core Colors - Deep Teal & Copper Accent Theme */
+    --background: 210 20% 98%;
+    --foreground: 210 40% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 12%;
+
+    /* Primary - Deep Teal */
+    --primary: 195 70% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Soft Gray Blue */
+    --secondary: 210 25% 94%;
+    --secondary-foreground: 210 40% 20%;
+
+    /* Muted - Neutral Gray */
+    --muted: 210 15% 93%;
+    --muted-foreground: 210 15% 40%;
+
+    /* Accent - Warm Copper */
+    --accent: 25 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 25 85% 55%;
+
+    --radius: 0.625rem;
+
+    /* Extended Color Palette */
+    --teal-950: 195 75% 10%;
+    --teal-900: 195 70% 15%;
+    --teal-800: 195 70% 20%;
+    --teal-700: 195 65% 28%;
+    --teal-600: 195 60% 35%;
+    --teal-500: 195 55% 45%;
+    --teal-400: 195 50% 55%;
+    --teal-300: 195 45% 70%;
+    --teal-200: 195 40% 85%;
+    --teal-100: 195 35% 95%;
+
+    --copper-600: 25 90% 42%;
+    --copper-500: 25 85% 55%;
+    --copper-400: 25 80% 62%;
+    --copper-300: 25 70% 72%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(145deg, hsl(195, 75%, 12%) 0%, hsl(195, 70%, 18%) 50%, hsl(210, 60%, 22%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(25, 85%, 52%) 0%, hsl(25, 90%, 58%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(195, 75%, 10%, 0.92) 0%, hsla(195, 70%, 18%, 0.85) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210, 20%, 98%) 0%, hsl(210, 15%, 95%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsla(210, 40%, 12%, 0.04);
+    --shadow-md: 0 4px 12px -2px hsla(210, 40%, 12%, 0.08), 0 2px 6px -2px hsla(210, 40%, 12%, 0.06);
+    --shadow-lg: 0 12px 28px -6px hsla(210, 40%, 12%, 0.1), 0 6px 12px -6px hsla(210, 40%, 12%, 0.08);
+    --shadow-xl: 0 24px 48px -12px hsla(210, 40%, 12%, 0.12);
+    --shadow-accent: 0 8px 24px -6px hsla(25, 85%, 55%, 0.35);
+    --shadow-glow: 0 0 40px -10px hsla(25, 85%, 55%, 0.4);
+
+    /* Sidebar */
+    --sidebar-background: 195 70% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 25 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 65% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 195 60% 22%;
+    --sidebar-ring: 25 85% 55%;
+  }
+
+  .dark {
+    --background: 210 35% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 30% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 30% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 25 85% 55%;
+    --primary-foreground: 210 40% 10%;
+
+    --secondary: 210 25% 16%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 210 25% 16%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 25 85% 55%;
+    --accent-foreground: 210 40% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 25% 18%;
+    --input: 210 25% 18%;
+    --ring: 25 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Source Sans Pro', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 sm:mb-4;
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .section-subtitle {
+    @apply text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply relative text-foreground/80 hover:text-primary transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+
+  .ieee-badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 bg-accent/15 text-accent text-xs font-bold rounded-full uppercase tracking-wide;
+  }
+
+  .btn-hero {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-3.5 font-semibold rounded-xl transition-all duration-300 text-sm;
+  }
+
+  .btn-hero-primary {
+    @apply btn-hero bg-accent text-white hover:bg-copper-600 shadow-md hover:shadow-accent transform hover:-translate-y-0.5 active:scale-95;
+  }
+
+  .btn-hero-secondary {
+    @apply btn-hero bg-white/10 text-white border border-white/25 hover:bg-white/20 hover:border-white/40 backdrop-blur-sm active:scale-95;
+  }
+
+  .page-hero {
+    @apply relative py-16 sm:py-20 md:py-24 overflow-hidden;
+    background: var(--gradient-hero);
+  }
+
+  .page-hero::before {
+    content: '';
+    @apply absolute inset-0 opacity-20;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/50 shadow-lg;
+  }
+
+  .section-divider {
+    @apply w-20 h-1 bg-accent rounded-full mx-auto mb-6;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}
