@@ -51,12 +51,12 @@ const AboutSection = () => {
             <p className="text-base sm:text-lg text-accent font-medium mb-3 sm:mb-4 italic">
               "{conferenceInfo.theme}"
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-justify">
               The conference focuses on the evolution of advanced technologies reshaping the future
               of society. It highlights innovative solutions that enhance intelligence, safety, and
               environmental responsibility across all domains of science and engineering.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 leading-relaxed text-justify">
               NGETI 2026 encourages researchers, academicians, industry experts, and innovators
               to present their ideas in artificial intelligence, smart infrastructure, communication
               systems, green energy, automation, and next-generation materials.

@@ -135,7 +135,7 @@ const RegistrationFees = () => {
                     <Info className="w-5 h-5 text-accent" />
                     <h3 className="text-lg font-semibold">Extra Page Charges</h3>
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-justify">
                     Maximum page limit: <strong>{submissionGuidelines.maxPages} pages</strong> in IEEE format.
                     Papers exceeding {submissionGuidelines.maxPages} pages (max {submissionGuidelines.maxPagesAllowed} pages)
                     should pay <strong>{submissionGuidelines.extraPageFee.indian}</strong> (Indian) /

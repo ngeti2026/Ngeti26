@@ -44,14 +44,14 @@ const About = () => {
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                   About NGETI <span className="font-sans">2026</span>
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
                   The <strong>International Conference on Next Generation Engineering and Technology
                     Innovations (NGETI 2026)</strong> is a premier event organized by the IEEE Kerala Section
                   and IEEE Kochi Subsection in collaboration with Viswajyothi College of Engineering and Technology.
                   It brings together global experts, researchers, and practitioners to explore the latest
                   advancements and emerging trends in interconnected engineering domains.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   NGETI 2026 aims to address challenges and opportunities presented by the integration
                   of technologies across sectors such as industry, healthcare, transportation, and energy.
                   The conference focuses on showcasing innovations, promoting interdisciplinary collaboration,
@@ -75,7 +75,7 @@ const About = () => {
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                   About Viswajyothi
                 </h2>
-                <div className="prose prose-lg text-muted-foreground leading-relaxed max-w-none">
+                <div className="prose prose-lg text-muted-foreground leading-relaxed max-w-none text-justify">
                   {institutionInfo.description}
                   <div className="mt-4 grid sm:grid-cols-2 gap-4 not-prose">
                     <div className="bg-background p-4 rounded-lg border border-border">
@@ -105,14 +105,14 @@ const About = () => {
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                   About IEEE Kerala Section
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
                   The IEEE Kerala Section is a prominent and active section of the Institute of Electrical and Electronics Engineers (IEEE),
                   dedicated to advancing technology for the benefit of humanity within the Kerala region of India. It is recognized as one
                   of the most vibrant IEEE sections globally. Formed as a Subsection in 1975 and approved as a full Section in 1983, it
                   now boasts over 15,000 members. The section organizes high-quality technical events, comprises 2 Sub-Sections
                   (Malabar and Kochi), and hosts numerous Student Branches and Society Chapters.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   The section is known for its dynamic activities and significant contributions to the IEEE community, organizing
                   international conferences, workshops, and initiatives that have both local and global impact. Its vision focuses on
                   advancing professionalism, member engagement, and societal impact through technical excellence.
@@ -134,12 +134,12 @@ const About = () => {
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                   About IEEE Kochi Subsection
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
                   The IEEE Kochi Subsection is the second subsection under the IEEE Kerala Section, inaugurated in April 2012. It covers
                   IEEE members from five districts: Ernakulam, Kottayam, Idukki, Alappuzha, and Thrissur. Kochi, being the commercial
                   and technical capital of Kerala, provides a strong base for technical activities.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   The subsection aims to leverage this strength towards 'Advancing Technology for Humanity' through various events,
                   competitions, and technical sessions. It actively engages engineering professionals, researchers, and students
                   through its diverse range of activities and executive committee initiatives.

@@ -72,7 +72,7 @@ const Venue = () => {
           <div className="container mx-auto px-4">
             <SectionHeader title="About the Institution" subtitle="Organizing Institution" />
             <div className="max-w-4xl mx-auto">
-              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-muted-foreground leading-relaxed mb-8">
+              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-muted-foreground leading-relaxed mb-8 text-justify">
                 {institutionInfo.description}
               </motion.p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

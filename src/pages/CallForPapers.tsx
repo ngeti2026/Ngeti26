@@ -43,13 +43,13 @@ const CallForPapers = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
                   The <strong>International Conference on Next Generation Engineering and Technology
                     Innovations (NGETI 2026)</strong> invites researchers, academicians, industry professionals,
                   and students worldwide to submit their original and unpublished research papers
                   for consideration.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
+                <p className="text-muted-foreground leading-relaxed mb-8 text-justify">
                   Under the theme <em>"{conferenceInfo.theme}"</em>, we welcome submissions that
                   address innovative solutions, theoretical advancements, and practical applications
                   across the following six tracks.

@@ -24,6 +24,12 @@ const AuthorGuidelines = () => {
               <span className="inline-block px-4 py-1.5 bg-accent/20 text-copper-300 text-sm font-medium rounded-full mb-4">
                 Conference Guidelines
               </span>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
+                The <strong>International Conference on Next Generation Engineering and Technology
+                  Innovations (NGETI 2026)</strong> invites researchers, academicians, industry professionals,
+                and students worldwide to submit their original and unpublished research papers
+                for consideration.
+              </p>
               <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">
                 Author Guidelines
               </h1>
@@ -131,6 +137,11 @@ const AuthorGuidelines = () => {
                 className="mt-16 text-center"
               >
                 <h2 className="text-3xl font-serif font-bold text-primary mb-4">Ready to Submit?</h2>
+                <p className="text-muted-foreground leading-relaxed mb-8 text-justify">
+                  Under the theme <em>"{conferenceInfo.theme}"</em>, we welcome submissions that
+                  address innovative solutions, theoretical advancements, and practical applications
+                  across the following six tracks.
+                </p>
                 <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
                   Submit your paper through the {submissionGuidelines.submissionTool}
                 </p>
