@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FileText, CheckCircle2, AlertCircle } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import SectionHeader from "@/components/ui/SectionHeader";
-import { authorGuidelines, submissionGuidelines } from "@/data/conferenceData";
+import { authorGuidelines, submissionGuidelines, conferenceInfo } from "@/data/conferenceData";
 
 const AuthorGuidelines = () => {
   return (
