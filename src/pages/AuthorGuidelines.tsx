@@ -63,11 +63,11 @@ const AuthorGuidelines = () => {
         {/* Guidelines Sections */}
         <section className="py-16 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <SectionHeader 
+            <SectionHeader
               title="Submission Guidelines"
               subtitle="Please follow these guidelines carefully when preparing your paper"
             />
-            
+
             <div className="max-w-4xl mx-auto space-y-8">
               {authorGuidelines.map((section, sectionIndex) => (
                 <motion.div
@@ -123,34 +123,30 @@ const AuthorGuidelines = () => {
                   </div>
                 </div>
               </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="mt-16 text-center"
+              >
+                <h2 className="text-3xl font-serif font-bold text-primary mb-4">Ready to Submit?</h2>
+                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+                  Submit your paper through the {submissionGuidelines.submissionTool}
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-8 py-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Submit Your Paper
+                </a>
+              </motion.div>
             </div>
           </div>
         </section>
-
-        {/* Submission CTA */}
-        <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl font-serif font-bold mb-4">Ready to Submit?</h2>
-              <p className="text-primary-foreground/75 mb-8 max-w-xl mx-auto">
-                Submit your paper through the {submissionGuidelines.submissionTool}
-              </p>
-              <a
-                href="#"
-                className="btn-hero-primary inline-flex"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Submit Your Paper
-              </a>
-            </motion.div>
-          </div>
-        </section>
-      </Layout>
+      </Layout >
     </>
   );
 };

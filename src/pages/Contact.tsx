@@ -38,10 +38,10 @@ const Contact = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-12">
+              <div className="max-w-3xl mx-auto">
                 {/* Contact Cards */}
                 <div className="space-y-6">
-                  <SectionHeader title="Contact Information" centered={false} />
+                  <SectionHeader title="Contact Information" />
 
                   {/* Organizing Chair */}
                   <motion.div
@@ -59,19 +59,19 @@ const Contact = () => {
                       <div className="flex items-center gap-3">
                         <Mail className="w-4 h-4 text-accent" />
                         <a
-                          href={`mailto:${committeeMembers.organizingChair.email}`}
+                          href="mailto:ngeti2026@gmail.com"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          {committeeMembers.organizingChair.email}
+                          ngeti2026@gmail.com
                         </a>
                       </div>
                       <div className="flex items-center gap-3">
                         <Phone className="w-4 h-4 text-accent" />
                         <a
-                          href={`tel:+91${committeeMembers.organizingChair.phone}`}
+                          href="tel:+917500247859"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          +91 {committeeMembers.organizingChair.phone}
+                          +91 7500247859
                         </a>
                       </div>
                     </div>
@@ -94,19 +94,19 @@ const Contact = () => {
                       <div className="flex items-center gap-3">
                         <Mail className="w-4 h-4 text-accent" />
                         <a
-                          href={`mailto:${committeeMembers.generalChairs[0].email}`}
+                          href="mailto:principal@vjcet.org"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          {committeeMembers.generalChairs[0].email}
+                          principal@vjcet.org
                         </a>
                       </div>
                       <div className="flex items-center gap-3">
                         <Phone className="w-4 h-4 text-accent" />
                         <a
-                          href={`tel:+91${committeeMembers.generalChairs[0].phone}`}
+                          href="tel:+919072964417"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          +91 {committeeMembers.generalChairs[0].phone}
+                          +91 9072964417
                         </a>
                       </div>
                     </div>
@@ -132,61 +132,6 @@ const Contact = () => {
                     </div>
                   </motion.div>
                 </div>
-
-                {/* Contact Form */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
-                >
-                  <SectionHeader title="Send us a Message" centered={false} />
-                  <div className="bg-card border border-border rounded-xl p-6 md:p-8">
-                    <form className="space-y-5">
-                      <div className="grid sm:grid-cols-2 gap-5">
-                        <div>
-                          <label className="block text-sm font-medium text-foreground mb-2">Name</label>
-                          <input
-                            type="text"
-                            className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50 transition-shadow"
-                            placeholder="Your name"
-                          />
-                        </div>
-                        <div>
-                          <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                          <input
-                            type="email"
-                            className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50 transition-shadow"
-                            placeholder="your@email.com"
-                          />
-                        </div>
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
-                        <input
-                          type="text"
-                          className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50 transition-shadow"
-                          placeholder="Inquiry subject"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-foreground mb-2">Message</label>
-                        <textarea
-                          rows={5}
-                          className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50 transition-shadow resize-none"
-                          placeholder="Your message..."
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent text-white font-semibold rounded-lg hover:bg-copper-600 transition-colors"
-                      >
-                        <Send className="w-4 h-4" />
-                        Send Message
-                      </button>
-                    </form>
-                  </div>
-                </motion.div>
               </div>
             </div>
           </div>
@@ -207,7 +152,7 @@ const Contact = () => {
             >
               <div className="h-[400px] rounded-xl overflow-hidden border border-border shadow-md">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3513893454897!2d76.56775517489387!3d9.999621590126377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d1e1de20ed57%3A0x9b5c4dcf3ce9d5f9!2sViswajyothi%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1702886400000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.793344689266!2d76.63062599999999!3d9.951145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07dd2f387bbce7%3A0x33c9780276b797b6!2sViswajyothi%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1766062682768!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

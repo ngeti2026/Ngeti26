@@ -181,59 +181,9 @@ const About = () => {
           </div>
         </section>
 
-        {/* Publication Info */}
-        <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-serif font-bold mb-8 text-center">
-                Publication Information
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/10 rounded-xl p-6 border border-white/20">
-                  <h3 className="text-lg font-semibold mb-4 text-gold-400">IEEE Xplore Indexed</h3>
-                  <p className="text-primary-foreground/80 text-sm">
-                    All accepted and presented papers will be submitted for inclusion in
-                    IEEE Xplore digital library, subject to meeting IEEE's scope and quality standards.
-                  </p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-6 border border-white/20">
-                  <h3 className="text-lg font-semibold mb-4 text-gold-400">Review Process</h3>
-                  <p className="text-primary-foreground/80 text-sm">
-                    {submissionGuidelines.reviewType} with {submissionGuidelines.reviewers}.
-                    Target acceptance rate: {submissionGuidelines.targetAcceptanceRate}.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Important Dates Table */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <SectionHeader title="Important Dates" />
-            <div className="max-w-2xl mx-auto">
-              <div className="bg-card border border-border rounded-xl overflow-hidden">
-                <table className="w-full">
-                  <thead className="bg-secondary">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground">Event</th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-foreground">Date</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-border">
-                    {importantDates.map((item, index) => (
-                      <tr key={index} className="hover:bg-secondary/50 transition-colors">
-                        <td className="px-6 py-4 text-sm text-muted-foreground">{item.label}</td>
-                        <td className="px-6 py-4 text-sm text-right font-semibold text-accent">{item.date}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
+
+
       </Layout>
     </>
   );

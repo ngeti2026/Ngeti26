@@ -134,15 +134,11 @@ export const committeeMembers = {
       designation: "Principal",
       affiliation: "Viswajyothi College of Engineering and Technology",
       description: "Distinguished Scientist from Department of Atomic Energy and Former Director, Fast Reactor Technology Group, IGCAR, Kalpakkam",
-      email: "principal@vjcet.org",
-      phone: "9072964417",
     },
     {
       name: "Dr. Shine George",
       designation: "Assoc. Professor & Coordinator Autonomous Activities, HoD (Civil Engg.)",
       affiliation: "Viswajyothi College of Engineering and Technology",
-      email: "head.civil@vjcet.org",
-      phone: "9495971178",
     },
   ],
   tpcChairs: [
@@ -150,7 +146,6 @@ export const committeeMembers = {
       name: "Dr. Neelakantan P. C.",
       designation: "Professor & Principal",
       affiliation: "Muthoot Institute of Technology, Kerala",
-      email: "pc@mgmits.ac.in",
       isIeee: true,
       ieeeTitle: "Senior Member, IEEE",
     },
@@ -158,15 +153,11 @@ export const committeeMembers = {
       name: "Dr. Thomas George",
       designation: "Professor & Principal",
       affiliation: "Mar Baselios Institute of Technology and Science, Kerala",
-      email: "principal@mbits.ac.in",
-      phone: "9446745380",
     },
     {
       name: "Dr. Shanmugesh K",
       designation: "Professor & HoD (Mechanical Engg.)",
       affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
-      email: "shunmugesh@vjcet.org",
-      phone: "9947929956",
     },
   ],
   publicationChairs: [
@@ -174,7 +165,6 @@ export const committeeMembers = {
       name: "Dr. Soni Kurian",
       designation: "Assoc. Professor & HoD (Electrical and Electronics Engg.)",
       affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
-      email: "sony@vjcet.org",
     },
   ],
   technicalProgramChairs: [
@@ -182,7 +172,6 @@ export const committeeMembers = {
       name: "Dr. Anita Brigit Mathew",
       designation: "Assoc. Professor & HoD (Artificial Intelligence and Data Science)",
       affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
-      email: "anitabrigit@vjcet.org",
     },
   ],
   publicityChairs: [
@@ -190,7 +179,6 @@ export const committeeMembers = {
       name: "Dr. Amel Austine",
       designation: "Assoc. Professor & HoD (CSE)",
       affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
-      email: "amel@vjcet.org",
     },
   ],
   financeChairs: [
@@ -198,15 +186,12 @@ export const committeeMembers = {
       name: "Dr. K V Thomas",
       designation: "Treasurer, Diocean Technical Education Trust",
       affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
-      phone: "8921967170",
     },
   ],
   organizingChair: {
     name: "Dr. Peter Reji Ramanatt",
     designation: "Organizing Chair",
     affiliation: "Viswajyothi College of Engineering and Technology",
-    email: "ngeti2026@gmail.com",
-    phone: "7500247859",
   },
 };
 

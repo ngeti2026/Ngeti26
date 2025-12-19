@@ -32,28 +32,7 @@ const ImportantDates = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto">
-              <SectionHeader title="Quick Reference" />
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-card border border-border rounded-xl overflow-hidden shadow-md">
-                <table className="w-full">
-                  <thead className="bg-primary text-primary-foreground">
-                    <tr><th className="px-6 py-4 text-left font-semibold">Event</th><th className="px-6 py-4 text-right font-semibold">Date</th></tr>
-                  </thead>
-                  <tbody className="divide-y divide-border">
-                    {importantDates.map((item, index) => (
-                      <tr key={index} className="hover:bg-secondary/50 transition-colors">
-                        <td className="px-6 py-4 text-foreground">{item.label}</td>
-                        <td className="px-6 py-4 text-right font-bold text-accent">{item.date}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+
       </Layout>
     </>
   );

@@ -34,30 +34,8 @@ const Committee = () => {
           </div>
         </section>
 
-        {/* Organizing Chair */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <SectionHeader title="Organizing Chair" />
-            <div className="max-w-md mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-              >
-                <CommitteeCard member={{
-                  name: committeeMembers.organizingChair.name,
-                  designation: committeeMembers.organizingChair.designation,
-                  affiliation: committeeMembers.organizingChair.affiliation,
-                  email: committeeMembers.organizingChair.email,
-                  phone: committeeMembers.organizingChair.phone,
-                }} />
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
         {/* General Chairs */}
-        <section className="py-16 bg-secondary/30">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <SectionHeader title="General Chairs" />
             <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -76,10 +54,26 @@ const Committee = () => {
           </div>
         </section>
 
+        {/* Organizing Chair */}
+        <section className="py-16 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <SectionHeader title="Organizing Chair" />
+            <div className="max-w-md mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <CommitteeCard member={committeeMembers.organizingChair} />
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* TPC Chairs */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <SectionHeader 
+            <SectionHeader
               title="Technical Program Committee Chairs"
               subtitle="Leading the technical review and program development"
             />
