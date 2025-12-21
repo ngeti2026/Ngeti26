@@ -47,7 +47,7 @@ const Committee = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <CommitteeCard member={member} />
+                  <CommitteeCard member={member} className="h-full" />
                 </motion.div>
               ))}
             </div>
@@ -55,20 +55,7 @@ const Committee = () => {
         </section>
 
         {/* Organizing Chair */}
-        <section className="py-16 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <SectionHeader title="Organizing Chair" />
-            <div className="max-w-md mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-              >
-                <CommitteeCard member={committeeMembers.organizingChair} />
-              </motion.div>
-            </div>
-          </div>
-        </section>
+
 
         {/* TPC Chairs */}
         <section className="py-16 bg-background">
@@ -108,7 +95,7 @@ const Committee = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                     >
-                      <CommitteeCard member={member} />
+                      <CommitteeCard member={member} className="h-full" />
                     </motion.div>
                   ))}
                 </div>
@@ -121,14 +108,14 @@ const Committee = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                     >
-                      <CommitteeCard member={member} />
+                      <CommitteeCard member={member} className="h-full" />
                     </motion.div>
                   ))}
                 </div>
               </div>
 
               {/* Publicity & Finance Chairs */}
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid md:grid-cols-2 gap-12 mb-16">
                 <div>
                   <SectionHeader title="Publicity Chair" centered={false} />
                   {committeeMembers.publicityChairs.map((member, index) => (
@@ -138,7 +125,7 @@ const Committee = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                     >
-                      <CommitteeCard member={member} />
+                      <CommitteeCard member={member} className="h-full" />
                     </motion.div>
                   ))}
                 </div>
@@ -151,41 +138,24 @@ const Committee = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                     >
-                      <CommitteeCard member={member} />
+                      <CommitteeCard member={member} className="h-full" />
                     </motion.div>
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Committee Stats */}
-        <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-serif font-bold text-center mb-12">
-                Committee Composition
-              </h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  { label: "TPC Members from Kerala", count: "2" },
-                  { label: "TPC Members from India", count: "30" },
-                  { label: "TPC Members International", count: "3" },
-                  { label: "Total Reviewers", count: "60+" },
-                ].map((stat, index) => (
+              {/* Organizing Chair */}
+              <div className="mt-16">
+                <SectionHeader title="Organizing Chair" />
+                <div className="max-w-md mx-auto">
                   <motion.div
-                    key={index}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="bg-white/10 rounded-xl p-6 text-center border border-white/15"
                   >
-                    <p className="text-3xl font-bold text-copper-400 mb-2">{stat.count}</p>
-                    <p className="text-sm text-primary-foreground/65">{stat.label}</p>
+                    <CommitteeCard member={committeeMembers.organizingChair} className="h-full" />
                   </motion.div>
-                ))}
+                </div>
               </div>
             </div>
           </div>

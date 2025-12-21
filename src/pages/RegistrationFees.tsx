@@ -47,9 +47,9 @@ const RegistrationFees = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-card border border-border rounded-xl overflow-hidden shadow-md"
+                className="bg-card border border-border rounded-xl overflow-hidden shadow-md overflow-x-auto"
               >
-                <table className="w-full">
+                <table className="w-full min-w-[600px]">
                   <thead className="bg-primary text-primary-foreground">
                     <tr>
                       <th className="px-6 py-4 text-left font-semibold">Category</th>
@@ -89,9 +89,9 @@ const RegistrationFees = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-card border border-border rounded-xl overflow-hidden shadow-md"
+                className="bg-card border border-border rounded-xl overflow-hidden shadow-md overflow-x-auto"
               >
-                <table className="w-full">
+                <table className="w-full min-w-[600px]">
                   <thead className="bg-primary text-primary-foreground">
                     <tr>
                       <th className="px-6 py-4 text-left font-semibold">Category</th>
@@ -181,22 +181,22 @@ const RegistrationFees = () => {
                     <Info className="w-5 h-5 text-accent" />
                     <h3 className="text-lg font-semibold">Registration Requirements</h3>
                   </div>
-                  <ul className="text-muted-foreground space-y-2 grid md:grid-cols-2 gap-x-8">
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2" />
-                      At least one author must register per accepted paper
+                  <ul className="text-muted-foreground space-y-4">
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">At least one author must register per accepted paper</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2" />
-                      Registered author must present the paper at the conference
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">Registered author must present the paper at the conference</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2" />
-                      IEEE membership must be valid at the time of registration
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">IEEE membership must be valid at the time of registration</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2" />
-                      Registration fee is non-refundable
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">Registration fee is non-refundable</span>
                     </li>
                   </ul>
                 </motion.div>

@@ -25,69 +25,78 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-background">
+    <section className="py-20 sm:py-28 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6">
-        <SectionHeader
-          title={
-            <span>
-              About NGETI <span className="font-sans">2026</span>
-            </span>
-          }
-          subtitle="A premier international conference bringing together global experts to explore next-generation engineering innovations."
-        />
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            title={
+              <span className="text-4xl sm:text-5xl lg:text-6xl font-serif text-teal-950">
+                About NGETI <span className="text-copper-400">2026</span>
+              </span>
+            }
+            subtitle="Bringing together global experts to explore next-generation innovations."
+            className="mb-16 text-center md:text-left"
+          />
 
-        <div className="flex flex-col gap-8 md:gap-12">
-          {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="w-full"
-          >
-            <h3 className="text-xl sm:text-2xl font-serif font-semibold text-primary mb-3 sm:mb-4">
-              Conference Theme
-            </h3>
-            <p className="text-base sm:text-lg text-accent font-medium mb-3 sm:mb-4 italic">
-              "{conferenceInfo.theme}"
-            </p>
-            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-justify">
-              The conference focuses on the evolution of advanced technologies reshaping the future
-              of society. It highlights innovative solutions that enhance intelligence, safety, and
-              environmental responsibility across all domains of science and engineering.
-            </p>
-            <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 leading-relaxed text-justify">
-              NGETI 2026 encourages researchers, academicians, industry experts, and innovators
-              to present their ideas in artificial intelligence, smart infrastructure, communication
-              systems, green energy, automation, and next-generation materials.
-            </p>
-            <Link
-              to="/about"
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all text-sm sm:text-base"
+          <div className="flex flex-col gap-16 items-center">
+            {/* Content - Modern Clean Typography */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-10 max-w-4xl mx-auto"
             >
-              Learn more about the conference
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
+              <div className="relative text-center py-8">
+                <p className="text-xl sm:text-2xl md:text-3xl text-teal-900 font-serif italic leading-relaxed relative z-10 px-4 max-w-3xl mx-auto">
+                  {conferenceInfo.theme}
+                </p>
+              </div>
 
-          {/* Feature Cards */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid sm:grid-cols-3 gap-4"
-          >
-            {features.map((feature, index) => (
-              <InfoCard
-                key={index}
-                icon={feature.icon}
-                title={feature.title}
-              >
-                <p className="text-xs sm:text-sm">{feature.description}</p>
-              </InfoCard>
-            ))}
-          </motion.div>
+              <div className="text-muted-foreground text-lg leading-loose text-justify space-y-6">
+                <p>
+                  The conference focuses on the evolution of advanced technologies reshaping the future
+                  of society. It highlights innovative solutions that enhance intelligence, safety, and
+                  environmental responsibility across all domains of science and engineering.
+                </p>
+                <p>
+                  NGETI 2026 encourages researchers, academicians, industry experts, and innovators
+                  to present their ideas in artificial intelligence, smart infrastructure, communication
+                  systems, green energy, automation, and next-generation materials.
+                </p>
+              </div>
+
+              <div className="pt-2 text-center md:text-left">
+                <Link
+                  to="/about"
+                  className="group inline-flex items-center gap-2 text-copper-600 font-bold tracking-wide uppercase text-sm border-b-2 border-transparent hover:border-copper-600 transition-all pb-1"
+                >
+                  More about conference
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Feature Cards - Minimalist Outlines - 3 Column Grid */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid md:grid-cols-3 gap-6 w-full"
+            >
+              {features.map((feature, index) => (
+                <InfoCard
+                  key={index}
+                  icon={feature.icon}
+                  title={feature.title}
+                  className="bg-transparent border border-gray-200 rounded-lg border-l-4 border-l-copper-400 p-6 hover:shadow-md transition-all duration-300 hover:border-gray-300 group h-full"
+                >
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors leading-relaxed">{feature.description}</p>
+                </InfoCard>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

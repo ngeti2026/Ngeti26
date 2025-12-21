@@ -133,7 +133,6 @@ export const committeeMembers = {
       name: "Dr. K. K. Rajan",
       designation: "Principal",
       affiliation: "Viswajyothi College of Engineering and Technology",
-      description: "Distinguished Scientist from Department of Atomic Energy and Former Director, Fast Reactor Technology Group, IGCAR, Kalpakkam",
     },
     {
       name: "Dr. Shine George",

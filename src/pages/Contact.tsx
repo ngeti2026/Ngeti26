@@ -77,40 +77,7 @@ const Contact = () => {
                     </div>
                   </motion.div>
 
-                  {/* General Chair */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
-                    className="bg-card border border-border rounded-xl p-6"
-                  >
-                    <h3 className="text-lg font-semibold text-foreground mb-4">General Chair</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <User className="w-4 h-4 text-accent" />
-                        <span className="text-muted-foreground">{committeeMembers.generalChairs[0].name}</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Mail className="w-4 h-4 text-accent" />
-                        <a
-                          href="mailto:principal@vjcet.org"
-                          className="text-muted-foreground hover:text-accent transition-colors"
-                        >
-                          principal@vjcet.org
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Phone className="w-4 h-4 text-accent" />
-                        <a
-                          href="tel:+919072964417"
-                          className="text-muted-foreground hover:text-accent transition-colors"
-                        >
-                          +91 9072964417
-                        </a>
-                      </div>
-                    </div>
-                  </motion.div>
+
 
                   {/* Conference Address */}
                   <motion.div
