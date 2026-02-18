@@ -30,6 +30,16 @@ const CallForPapers = () => {
                 We invite researchers to submit original research papers in the following tracks
               </p>
 
+              <div className="flex justify-center">
+                <a
+                  href="#submission"
+                  className="inline-flex items-center gap-2 bg-white text-teal-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <FileText className="w-5 h-5" />
+                  Submit Paper
+                </a>
+              </div>
+
             </motion.div>
           </div>
         </section>
@@ -71,6 +81,34 @@ const CallForPapers = () => {
             <div className="max-w-4xl mx-auto">
               <TrackAccordion />
             </div>
+          </div>
+        </section>
+
+        {/* Submit Section */}
+        <section id="submission" className="py-16 bg-primary text-primary-foreground">
+          <div className="container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-serif font-bold mb-6">Ready to Submit?</h2>
+              <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
+                Submit your paper via Microsoft CMT. Please ensure you have read the submission guidelines below before proceeding.
+              </p>
+              <a
+                href="https://cmt3.research.microsoft.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-teal-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <FileText className="w-5 h-5" />
+                Submit via Microsoft CMT*
+              </a>
+              <p className="mt-6 text-sm text-primary-foreground/70 italic max-w-3xl mx-auto">
+                * The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+              </p>
+            </motion.div>
           </div>
         </section>
 
