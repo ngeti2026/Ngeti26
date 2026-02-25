@@ -103,10 +103,10 @@ const CallForPapers = () => {
                 className="inline-flex items-center gap-2 bg-white text-teal-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <FileText className="w-5 h-5" />
-                Submit via Microsoft CMT*
+                Submit via Microsoft CMT
               </a>
-              <p className="mt-6 text-sm text-primary-foreground/70 italic max-w-3xl mx-auto">
-                * The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+              <p className="mt-6 text-sm text-primary-foreground/70 max-w-3xl mx-auto">
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
               </p>
             </motion.div>
           </div>
