@@ -12,7 +12,10 @@ const CallForPapers = () => {
     <>
       <Helmet>
         <title>Call for Papers - NGETI 2026 | Submit Your Research</title>
-        <meta name="description" content="Submit your research to NGETI 2026. Explore 6 tracks covering AI, Computing, Communication, Power, Materials, and Sustainable Infrastructure." />
+        <meta
+          name="description"
+          content="Submit your research to NGETI 2026. Explore 6 tracks covering AI, Computing, Communication, Power, Materials, and Sustainable Infrastructure."
+        />
       </Helmet>
       <Layout>
         {/* Hero Banner */}
@@ -27,7 +30,8 @@ const CallForPapers = () => {
                 Call for Papers
               </h1>
               <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                We invite researchers to submit original research papers in the following tracks
+                We invite researchers to submit original research papers in the
+                following tracks
               </p>
 
               <div className="flex justify-center">
@@ -39,7 +43,6 @@ const CallForPapers = () => {
                   Submit Paper
                 </a>
               </div>
-
             </motion.div>
           </div>
         </section>
@@ -54,18 +57,21 @@ const CallForPapers = () => {
                 viewport={{ once: true }}
               >
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
-                  The <strong>International Conference on Next Generation Engineering and Technology
-                    Innovations (NGETI 2026)</strong> invites researchers, academicians, industry professionals,
-                  and students worldwide to submit their original and unpublished research papers
-                  for consideration.
+                  The{" "}
+                  <strong>
+                    International Conference on Next Generation Engineering and
+                    Technology Innovations (NGETI 2026)
+                  </strong>{" "}
+                  invites researchers, academicians, industry professionals, and
+                  students worldwide to submit their original and unpublished
+                  research papers for consideration.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8 text-justify">
-                  Under the theme <em>"{conferenceInfo.theme}"</em>, we welcome submissions that
-                  address innovative solutions, theoretical advancements, and practical applications
-                  across the following six tracks.
+                  Under the theme <em>"{conferenceInfo.theme}"</em>, we welcome
+                  submissions that address innovative solutions, theoretical
+                  advancements, and practical applications across the following
+                  six tracks.
                 </p>
-
-
               </motion.div>
             </div>
           </div>
@@ -85,16 +91,22 @@ const CallForPapers = () => {
         </section>
 
         {/* Submit Section */}
-        <section id="submission" className="py-16 bg-primary text-primary-foreground">
+        <section
+          id="submission"
+          className="py-16 bg-primary text-primary-foreground"
+        >
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-serif font-bold mb-6">Ready to Submit?</h2>
+              <h2 className="text-3xl font-serif font-bold mb-6">
+                Ready to Submit?
+              </h2>
               <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                Submit your paper via Microsoft CMT. Please ensure you have read the submission guidelines below before proceeding.
+                Submit your paper via Microsoft CMT. Please ensure you have read
+                the submission guidelines below before proceeding.
               </p>
               <a
                 href="https://cmt3.research.microsoft.com/"
@@ -106,8 +118,15 @@ const CallForPapers = () => {
                 Submit via Microsoft CMT
               </a>
               <p className="mt-6 text-sm text-primary-foreground/70 max-w-3xl mx-auto">
-                CMT ACKNOWLEDGEMENT<br />
-                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                <strong className="text-base font-bold">
+                  CMT ACKNOWLEDGEMENT
+                </strong>
+                <br />
+                The Microsoft CMT service was used for managing the
+                peer-reviewing process for this conference. This service was
+                provided for free by Microsoft and they bore all expenses,
+                including costs for Azure cloud services as well as for software
+                development and support.
               </p>
             </motion.div>
           </div>
@@ -127,30 +146,35 @@ const CallForPapers = () => {
                   <li className="flex items-start gap-3">
                     <FileText className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Papers must be written in English and formatted in <strong>{submissionGuidelines.paperFormat}</strong>
+                      Papers must be written in English and formatted in{" "}
+                      <strong>{submissionGuidelines.paperFormat}</strong>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <FileText className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Maximum paper length: <strong>{submissionGuidelines.maxPages} pages</strong> (up to {submissionGuidelines.maxPagesAllowed} pages with extra fee)
+                      Maximum paper length:{" "}
+                      <strong>{submissionGuidelines.maxPages} pages</strong> (up
+                      to {submissionGuidelines.maxPagesAllowed} pages with extra
+                      fee)
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <FileText className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      All papers undergo <strong>{submissionGuidelines.reviewType}</strong> by {submissionGuidelines.reviewers}
+                      All papers undergo{" "}
+                      <strong>{submissionGuidelines.reviewType}</strong> by{" "}
+                      {submissionGuidelines.reviewers}
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <FileText className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Plagiarism check using <strong>{submissionGuidelines.plagiarismTool}</strong>
+                      Plagiarism check using{" "}
+                      <strong>{submissionGuidelines.plagiarismTool}</strong>
                     </span>
                   </li>
                 </ul>
-
-
               </div>
             </div>
           </div>
