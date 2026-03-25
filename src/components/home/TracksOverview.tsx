@@ -12,7 +12,7 @@ const TracksOverview = () => {
       <div className="container mx-auto px-4">
         <SectionHeader 
           title="Conference Tracks"
-          subtitle="Six comprehensive tracks covering the breadth of next-generation engineering and technology innovations."
+          subtitle="Four comprehensive tracks covering the breadth of next-generation engineering and technology innovations."
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -38,7 +38,12 @@ const TracksOverview = () => {
                     <h3 className="text-base font-semibold text-foreground mt-1 leading-tight">
                       {track.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground mt-2">
+                    {track.coordinator && (
+                      <p className="text-xs text-muted-foreground mt-1">
+                        Coord: {track.coordinator}
+                      </p>
+                    )}
+                    <p className="text-xs text-muted-foreground mt-2 font-medium">
                       {track.topics.length} research areas
                     </p>
                   </div>

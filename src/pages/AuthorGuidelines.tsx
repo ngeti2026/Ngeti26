@@ -140,7 +140,7 @@ const AuthorGuidelines = () => {
                 <p className="text-muted-foreground leading-relaxed mb-8 text-justify">
                   Under the theme <em>"{conferenceInfo.theme}"</em>, we welcome submissions that
                   address innovative solutions, theoretical advancements, and practical applications
-                  across the following six tracks.
+                  across the following four tracks.
                 </p>
                 <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
                   Submit your paper through the {submissionGuidelines.submissionTool}

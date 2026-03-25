@@ -14,7 +14,7 @@ const CallForPapers = () => {
         <title>Call for Papers - NGETI 2026 | Submit Your Research</title>
         <meta
           name="description"
-          content="Submit your research to NGETI 2026. Explore 6 tracks covering AI, Computing, Communication, Power, Materials, and Sustainable Infrastructure."
+          content="Submit your research to NGETI 2026. Explore 4 tracks covering AI, Computing, Communication, and Power Systems."
         />
       </Helmet>
       <Layout>
@@ -70,7 +70,7 @@ const CallForPapers = () => {
                   Under the theme <em>"{conferenceInfo.theme}"</em>, we welcome
                   submissions that address innovative solutions, theoretical
                   advancements, and practical applications across the following
-                  six tracks.
+                  four tracks.
                 </p>
               </motion.div>
             </div>

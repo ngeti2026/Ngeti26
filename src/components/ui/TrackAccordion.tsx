@@ -32,6 +32,11 @@ const TrackAccordion = () => {
                   <h3 className="text-base font-semibold text-foreground">
                     {track.title}
                   </h3>
+                  {track.coordinator && (
+                    <p className="text-sm text-muted-foreground mt-0.5">
+                      Coordinator: {track.coordinator}
+                    </p>
+                  )}
                 </div>
               </div>
             </AccordionTrigger>

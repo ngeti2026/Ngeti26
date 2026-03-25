@@ -158,12 +158,10 @@ const About = () => {
             />
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { icon: <Lightbulb className="w-6 h-6" />, title: "Artificial Intelligence", desc: "AI, machine learning, quantum computing, and autonomous systems" },
-                { icon: <Globe className="w-6 h-6" />, title: "Smart Infrastructure", desc: "IoT, smart cities, digital twins, and cyber-physical systems" },
-                { icon: <Target className="w-6 h-6" />, title: "Communication Systems", desc: "Next-gen wireless, VLSI, embedded systems, and network technologies" },
-                { icon: <Award className="w-6 h-6" />, title: "Power & Automation", desc: "Renewable energy, smart grids, EVs, and industrial automation" },
-                { icon: <Users className="w-6 h-6" />, title: "Advanced Materials", desc: "Nanotechnology, smart manufacturing, and material sciences" },
-                { icon: <BookOpen className="w-6 h-6" />, title: "Sustainable Systems", desc: "Green architecture, environmental management, and urban planning" },
+                { icon: <Lightbulb className="w-6 h-6" />, title: "Track 1: AI & Computing", desc: "GenAI, LLMs, quantum computing, autonomous systems, and ethical AI regulation." },
+                { icon: <Globe className="w-6 h-6" />, title: "Track 2: Computer Science", desc: "Data mining, big data, IoT, blockchain, and smart mobility applications." },
+                { icon: <Target className="w-6 h-6" />, title: "Track 3: Communication & VLSI", desc: "Next-gen wireless, VLSI, embedded systems, and remote sensing applications." },
+                { icon: <Award className="w-6 h-6" />, title: "Track 4: Power & Automation", desc: "Renewable energy, nuclear energy security, smart grids, EVs, and industrial robotics." },
               ].map((item, index) => (
                 <motion.div
                   key={index}

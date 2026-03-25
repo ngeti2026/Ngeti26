@@ -9,7 +9,7 @@ const features = [
   {
     icon: <Target className="w-6 h-6" />,
     title: "Interdisciplinary Focus",
-    description: "Bridging AI, computing, communication, power systems, and sustainable infrastructure."
+    description: "Bridging AI, computing, communication, power and automation systems."
   },
   {
     icon: <Lightbulb className="w-6 h-6" />,
@@ -61,8 +61,8 @@ const AboutSection = () => {
                 </p>
                 <p>
                   NGETI 2026 encourages researchers, academicians, industry experts, and innovators
-                  to present their ideas in artificial intelligence, smart infrastructure, communication
-                  systems, green energy, automation, and next-generation materials.
+                  to present their ideas in artificial intelligence, computer science, communication
+                  systems, VLSI, and power automation.
                 </p>
               </div>
 
