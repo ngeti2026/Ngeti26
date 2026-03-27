@@ -38,11 +38,6 @@ const TracksOverview = () => {
                     <h3 className="text-base font-semibold text-foreground mt-1 leading-tight">
                       {track.title}
                     </h3>
-                    {track.coordinator && (
-                      <p className="text-xs text-muted-foreground mt-1">
-                        Coord: {track.coordinator}
-                      </p>
-                    )}
                     <p className="text-xs text-muted-foreground mt-2 font-medium">
                       {track.topics.length} research areas
                     </p>

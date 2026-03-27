@@ -23,7 +23,6 @@ export const tracks = [
   {
     id: 1,
     title: "Artificial Intelligence and Advanced Computing Paradigms",
-    coordinator: "Dr Sarika S, Professor, Adi Shankara Institute of Engineering and Technology, Kalady",
     topics: [
       "General AI and Large Language Models",
       "Quantum Computing",
@@ -40,7 +39,6 @@ export const tracks = [
   {
     id: 2,
     title: "Emerging Trends and Applications in Computer Science",
-    coordinator: "Dr. Anishin Raj MM, Professor, MITS, Kochi",
     topics: [
       "Data Mining",
       "Big Data and Data Analytics",
@@ -60,7 +58,6 @@ export const tracks = [
   {
     id: 3,
     title: "Communication, VLSI and Embedded Systems",
-    coordinator: "Dr. Siddharth Shelly, Associate Professor, MACE, Kothamangalam",
     topics: [
       "Next generation wireless communication and network systems",
       "Wireless sensor networks",
@@ -77,7 +74,6 @@ export const tracks = [
   {
     id: 4,
     title: "Power and Automation",
-    coordinator: "Dr. Sindu T K, NIT Calicut",
     topics: [
       "Role of Nuclear Energy for Nation’s Power Security",
       "Renewable and Sustainable Energy Systems",
