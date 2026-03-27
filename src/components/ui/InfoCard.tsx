@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 interface InfoCardProps {
   icon?: ReactNode;
-  title: string;
+  title: ReactNode;
   children: ReactNode;
   className?: string;
 }

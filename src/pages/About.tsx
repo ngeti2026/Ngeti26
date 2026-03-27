@@ -156,12 +156,48 @@ const About = () => {
               title="Conference Scope"
               subtitle="NGETI 2026 covers a broad spectrum of engineering and technology domains"
             />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {[
-                { icon: <Lightbulb className="w-6 h-6" />, title: "Track 1: AI & Computing", desc: "GenAI, LLMs, quantum computing, autonomous systems, and ethical AI regulation." },
-                { icon: <Globe className="w-6 h-6" />, title: "Track 2: Computer Science", desc: "Data mining, big data, IoT, blockchain, and smart mobility applications." },
-                { icon: <Target className="w-6 h-6" />, title: "Track 3: Communication & VLSI", desc: "Next-gen wireless, VLSI, embedded systems, and remote sensing applications." },
-                { icon: <Award className="w-6 h-6" />, title: "Track 4: Power & Automation", desc: "Renewable energy, nuclear energy security, smart grids, EVs, and industrial robotics." },
+                { 
+                  icon: <Lightbulb className="w-6 h-6" />, 
+                  title: (
+                    <>
+                      <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 1</span>
+                      <span>AI & Advanced Computing</span>
+                    </>
+                  ), 
+                  desc: "GenAI, LLMs, quantum computing, autonomous systems, and ethical AI regulation." 
+                },
+                { 
+                  icon: <Globe className="w-6 h-6" />, 
+                  title: (
+                    <>
+                      <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 2</span>
+                      <span>Computer Science Trends</span>
+                    </>
+                  ), 
+                  desc: "Data mining, big data, IoT, blockchain, and smart mobility applications." 
+                },
+                { 
+                  icon: <Target className="w-6 h-6" />, 
+                  title: (
+                    <>
+                      <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 3</span>
+                      <span>Communication & VLSI</span>
+                    </>
+                  ), 
+                  desc: "Next-gen wireless, VLSI, embedded systems, and remote sensing applications." 
+                },
+                { 
+                  icon: <Award className="w-6 h-6" />, 
+                  title: (
+                    <>
+                      <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 4</span>
+                      <span>Power & Automation</span>
+                    </>
+                  ), 
+                  desc: "Renewable energy, nuclear energy security, smart grids, EVs, and industrial robotics." 
+                },
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -170,8 +206,8 @@ const About = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <InfoCard icon={item.icon} title={item.title}>
-                    <p className="text-sm">{item.desc}</p>
+                  <InfoCard icon={item.icon} title={item.title} className="h-full">
+                    <p className="text-sm leading-relaxed">{item.desc}</p>
                   </InfoCard>
                 </motion.div>
               ))}
