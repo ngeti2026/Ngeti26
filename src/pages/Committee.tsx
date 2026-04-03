@@ -38,10 +38,25 @@ const Committee = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <SectionHeader title="General Chairs" />
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
               {committeeMembers.generalChairs.map((member, index) => (
                 <motion.div
-                  key={index}
+                  key={`general-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <CommitteeCard member={member} className="h-full" />
+                </motion.div>
+              ))}
+            </div>
+
+            <SectionHeader title="General Co-Chair" />
+            <div className="grid md:grid-cols-1 gap-6 max-w-md mx-auto">
+              {committeeMembers.generalCoChairs.map((member, index) => (
+                <motion.div
+                  key={`general-co-${index}`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -64,10 +79,25 @@ const Committee = () => {
               title="Technical Program Committee Chairs"
               subtitle="Leading the technical review and program development"
             />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
               {committeeMembers.tpcChairs.map((member, index) => (
                 <motion.div
-                  key={index}
+                  key={`tpc-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <CommitteeCard member={member} />
+                </motion.div>
+              ))}
+            </div>
+
+            <SectionHeader title="Technical Program Committee Co-Chairs" />
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {committeeMembers.tpcCoChairs.map((member, index) => (
+                <motion.div
+                  key={`tpc-co-${index}`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -84,26 +114,12 @@ const Committee = () => {
         <section className="py-16 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              {/* Publication & Technical Program Chairs */}
-              <div className="grid md:grid-cols-2 gap-12 mb-16">
-                <div>
-                  <SectionHeader title="Publication Chair" centered={false} />
+              <div className="mb-16">
+                <SectionHeader title="Publication Chairs" />
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                   {committeeMembers.publicationChairs.map((member, index) => (
                     <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                    >
-                      <CommitteeCard member={member} className="h-full" />
-                    </motion.div>
-                  ))}
-                </div>
-                <div>
-                  <SectionHeader title="Technical Program Chair" centered={false} />
-                  {committeeMembers.technicalProgramChairs.map((member, index) => (
-                    <motion.div
-                      key={index}
+                      key={`pub-${index}`}
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
@@ -130,7 +146,7 @@ const Committee = () => {
                   ))}
                 </div>
                 <div>
-                  <SectionHeader title="Finance Chair" centered={false} />
+                  <SectionHeader title="Finance Committee Chair" centered={false} />
                   {committeeMembers.financeChairs.map((member, index) => (
                     <motion.div
                       key={index}

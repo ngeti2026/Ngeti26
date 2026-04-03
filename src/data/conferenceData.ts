@@ -109,61 +109,72 @@ export const committeeMembers = {
       affiliation: "Viswajyothi College of Engineering and Technology",
     },
     {
+      name: "Dr. Subash T D",
+      designation: "Member, Board of Governors, IEEE Photonics Society and Professor",
+      affiliation: "Zhejiang Ocean University, China",
+    },
+  ],
+  generalCoChairs: [
+    {
       name: "Dr. Shine George",
-      designation: "Assoc. Professor & Coordinator Autonomous Activities, HoD (Civil Engg.)",
+      designation: "Assoc.Professor & HoD (CE)",
       affiliation: "Viswajyothi College of Engineering and Technology",
     },
   ],
   tpcChairs: [
     {
       name: "Dr. Neelakantan P. C.",
-      designation: "Professor & Principal",
-      affiliation: "Muthoot Institute of Technology, Kerala",
-      isIeee: true,
-      ieeeTitle: "Senior Member, IEEE",
+      designation: "Principal",
+      affiliation: "MITS",
     },
     {
       name: "Dr. Thomas George",
-      designation: "Professor & Principal",
-      affiliation: "Mar Baselios Institute of Technology and Science, Kerala",
+      designation: "Principal",
+      affiliation: "MBITS",
     },
+  ],
+  tpcCoChairs: [
     {
       name: "Dr. Shanmugesh K",
-      designation: "Professor & HoD (Mechanical Engg.)",
-      affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
+      affiliation: "Viswajyothi College of Engineering and Technology",
+    },
+    {
+      name: "Dr. Naveen Jacob",
+      affiliation: "Viswajyothi College of Engineering and Technology",
+    },
+    {
+      name: "Dr. Kala S.",
+      affiliation: "IIIT, Kottayam",
     },
   ],
   publicationChairs: [
     {
-      name: "Dr. Soni Kurian",
-      designation: "Assoc. Professor & HoD (Electrical and Electronics Engg.)",
-      affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
+      name: "Dr. Sony Kurian",
+      affiliation: "Viswajyothi College of Engineering and Technology",
     },
-  ],
-  technicalProgramChairs: [
     {
       name: "Dr. Anita Brigit Mathew",
-      designation: "Assoc. Professor & HoD (Artificial Intelligence and Data Science)",
-      affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
+      affiliation: "Viswajyothi College of Engineering and Technology",
+    },
+    {
+      name: "Dr Jim George",
+      affiliation: "MITS",
     },
   ],
   publicityChairs: [
     {
       name: "Dr. Amel Austine",
-      designation: "Assoc. Professor & HoD (CSE)",
-      affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
+      affiliation: "Viswajyothi College of Engineering and Technology",
     },
   ],
   financeChairs: [
     {
       name: "Dr. K V Thomas",
-      designation: "Treasurer, Diocean Technical Education Trust",
-      affiliation: "Viswajyothi College of Engineering and Technology, Kerala",
+      affiliation: "Viswajyothi College of Engineering and Technology",
     },
   ],
   organizingChair: {
     name: "Dr. Peter Reji Ramanatt",
-    designation: "Organizing Chair",
     affiliation: "Viswajyothi College of Engineering and Technology",
   },
 };

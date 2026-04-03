@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 interface CommitteeMember {
   name: string;
-  designation: string;
+  designation?: string;
   affiliation: string;
   email?: string;
   phone?: string;
@@ -42,9 +42,11 @@ const CommitteeCard = ({ member, className }: CommitteeCardProps) => {
         <h3 className="text-lg font-semibold text-foreground mb-1">
           {member.name}
         </h3>
-        <p className="text-sm text-accent font-medium mb-1">
-          {member.designation}
-        </p>
+        {member.designation && (
+          <p className="text-sm text-accent font-medium mb-1">
+            {member.designation}
+          </p>
+        )}
         <p className="text-sm text-muted-foreground mb-3">
           {member.affiliation}
         </p>
