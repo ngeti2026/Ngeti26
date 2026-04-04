@@ -14,11 +14,6 @@ const features = [
     description: "Each paper undergoes rigorous evaluation by 2-3 expert reviewers."
   },
   {
-    icon: <Award className="w-6 h-6" />,
-    title: "30% Acceptance Rate",
-    description: "High-quality standards ensuring only the best research gets published."
-  },
-  {
     icon: <CheckCircle2 className="w-6 h-6" />,
     title: "IEEE Standards",
     description: "Papers follow IEEE 2-column format with maximum 6 pages."
@@ -35,7 +30,7 @@ const PublicationSection = () => {
           className="[&_.section-title]:text-primary-foreground [&_.section-subtitle]:text-primary-foreground/80 [&_div:last-child]:bg-gold-500"
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {features.map((feature, index) => (
             <motion.div
               key={index}

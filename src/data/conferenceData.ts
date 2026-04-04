@@ -215,7 +215,6 @@ export const submissionGuidelines = {
   extraPageFee: { indian: "₹500", foreign: "$20" },
   reviewType: "Blind Peer Review",
   reviewers: "2-3 reviewers per paper",
-  targetAcceptanceRate: "30%",
   plagiarismTool: "Turnitin",
   submissionTool: "Microsoft Conference Management Tool (CMT)",
 };
@@ -275,7 +274,6 @@ export const authorGuidelines = [
       "All submissions undergo blind peer review",
       "Each paper reviewed by 2-3 expert reviewers",
       "Plagiarism check using Turnitin",
-      "Target acceptance rate: ~30%",
       "Authors notified via email upon decision",
     ]
   },

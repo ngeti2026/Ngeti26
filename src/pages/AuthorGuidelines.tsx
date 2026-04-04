@@ -4,6 +4,8 @@ import { FileText, CheckCircle2, AlertCircle } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { authorGuidelines, submissionGuidelines, conferenceInfo } from "@/data/conferenceData";
+// @ts-ignore
+import templateDoc from "@/assets/Conference-template-A4.doc";
 
 const AuthorGuidelines = () => {
   return (
@@ -43,12 +45,11 @@ const AuthorGuidelines = () => {
         {/* Quick Overview */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
                 { label: "Paper Format", value: "IEEE 2-Column" },
                 { label: "Max Pages", value: `${submissionGuidelines.maxPages} Pages` },
                 { label: "Review Type", value: "Blind Peer Review" },
-                { label: "Acceptance Rate", value: submissionGuidelines.targetAcceptanceRate },
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -94,7 +95,22 @@ const AuthorGuidelines = () => {
                     {section.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-start gap-3">
                         <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{item}</span>
+                        <span className="text-muted-foreground">
+                          {item === "Use the official IEEE conference template" ? (
+                            <>
+                              Use the official{" "}
+                              <a
+                                href={templateDoc}
+                                download="Conference-template-A4.doc"
+                                className="text-accent hover:underline font-medium"
+                              >
+                                IEEE conference template
+                              </a>
+                            </>
+                          ) : (
+                            item
+                          )}
+                        </span>
                       </li>
                     ))}
                   </ul>
