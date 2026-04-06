@@ -116,7 +116,77 @@ const AuthorGuidelines = () => {
                   </ul>
                 </motion.div>
               ))}
+
+              {/* PDF Instructions for Authors */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+                className="bg-card border border-border rounded-xl p-6 md:p-8"
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 text-accent flex items-center justify-center">
+                    <FileText className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">PDF Instructions for Authors</h3>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-lg font-medium text-accent">Creating your PDF eXpress Account</h4>
+                  
+                  <div className="text-muted-foreground space-y-4">
+                    <p>
+                      Log in to the{" "}
+                      <a 
+                        href="https://ieee-pdf-express.org/account/login" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-accent hover:underline font-medium"
+                      >
+                        IEEE PDF eXpress® site
+                      </a>
+                    </p>
+                    
+                    <div className="space-y-2">
+                      <p>First-time users should do the following:</p>
+                      <ol className="list-decimal ml-6 space-y-2">
+                        <li>
+                          <a 
+                            href="https://ieee-pdf-express.org/account/signup" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-accent hover:underline font-medium"
+                          >
+                            Create Account
+                          </a>
+                        </li>
+                        <li>
+                          Enter the following:
+                          <ul className="list-disc ml-6 mt-1 space-y-1">
+                            <li><strong>71489X</strong> for the Conference ID</li>
+                            <li>your email address</li>
+                            <li>a password</li>
+                          </ul>
+                        </li>
+                        <li>Continue to enter information as prompted.</li>
+                      </ol>
+                    </div>
+
+                    <p>
+                      An Online confirmation will be displayed and an email confirmation will be sent
+                      verifying your account setup.
+                    </p>
+                    
+                    <p>
+                      Previous users of PDF eXpress need to follow the above steps but should enter the same
+                      password that was used for previous conferences. Verify that your contact information is valid.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
+
           </div>
         </section>
 
