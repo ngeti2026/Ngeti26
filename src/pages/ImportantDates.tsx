@@ -10,7 +10,7 @@ const ImportantDates = () => {
     <>
       <Helmet>
         <title>Important Dates - NGETI 2026</title>
-        <meta name="description" content="Key deadlines for NGETI 2026: Paper submission deadline July 31, 2026. Conference dates December 4-5, 2026." />
+        <meta name="description" content="Key deadlines for NGETI 2026: Paper submission deadline August 15, 2026. Conference dates December 4-5, 2026." />
       </Helmet>
       <Layout>
         <section className="page-hero text-primary-foreground">

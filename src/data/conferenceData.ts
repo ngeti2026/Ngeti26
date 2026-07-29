@@ -13,7 +13,7 @@ export const conferenceInfo = {
 
 export const importantDates = [
   { label: "Call for Papers Announcement", date: "01 May 2026", status: "upcoming" },
-  { label: "Draft Paper Submission Deadline", date: "31 July 2026", status: "upcoming" },
+  { label: "Draft Paper Submission Deadline", date: "15 August 2026", status: "upcoming" },
   { label: "Notification of Acceptance", date: "15 October 2026", status: "upcoming" },
   { label: "Camera-Ready Paper Submission", date: "10 November 2026", status: "upcoming" },
   { label: "Conference Dates", date: "04-05 December 2026", status: "upcoming" },

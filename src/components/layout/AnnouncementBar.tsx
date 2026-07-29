@@ -8,7 +8,7 @@ const AnnouncementBar = () => {
         <div className="flex items-center justify-center gap-2 text-sm font-medium">
           <Calendar className="w-4 h-4" />
           <span className="hidden sm:inline">Paper Submission Deadline:</span>
-          <span className="font-bold">31 July 2026</span>
+          <span className="font-bold">15 August 2026</span>
           <span className="mx-2 hidden sm:inline">|</span>
           <Link 
             to="/important-dates" 
