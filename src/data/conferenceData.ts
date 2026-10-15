@@ -105,7 +105,7 @@ export const committeeMembers = {
   generalChairs: [
     {
       name: "Dr. K. K. Rajan",
-      designation: "Principal",
+      designation: "Distinguished Scientist (DAE) and Former Director",
       affiliation: "Viswajyothi College of Engineering and Technology",
     },
     {

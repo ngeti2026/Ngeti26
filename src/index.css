@@ -1,7 +1,5 @@
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* NGETI 2026 Conference Design System - Modern Professional Theme */
 
@@ -116,9 +114,60 @@
   }
 }
 
+/* Tailwind v4: Register CSS variables as theme tokens so utilities like
+   bg-background, text-foreground, border-border, etc. work correctly. */
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-copper-600: hsl(var(--copper-600));
+  --color-copper-500: hsl(var(--copper-500));
+  --color-copper-400: hsl(var(--copper-400));
+  --color-copper-300: hsl(var(--copper-300));
+  --color-teal-950: hsl(var(--teal-950));
+  --color-teal-900: hsl(var(--teal-900));
+  --color-teal-800: hsl(var(--teal-800));
+  --color-teal-700: hsl(var(--teal-700));
+  --color-teal-600: hsl(var(--teal-600));
+  --color-teal-500: hsl(var(--teal-500));
+  --color-teal-400: hsl(var(--teal-400));
+  --color-teal-300: hsl(var(--teal-300));
+  --color-teal-200: hsl(var(--teal-200));
+  --color-teal-100: hsl(var(--teal-100));
+  --color-sidebar-background: hsl(var(--sidebar-background));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
 @layer base {
   * {
-    @apply border-border;
+    /* Replaces @apply border-border which doesn't work as a bare utility in Tailwind v4 */
+    border-color: hsl(var(--border));
   }
 
   html {
@@ -172,11 +221,15 @@
   }
 
   .btn-hero-primary {
-    @apply btn-hero bg-accent text-white hover:bg-copper-600 shadow-md hover:shadow-accent transform hover:-translate-y-0.5 active:scale-95;
+    /* Inlined btn-hero — Tailwind v4 disallows @apply of custom classes */
+    @apply inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-3.5 font-semibold rounded-xl transition-all duration-300 text-sm;
+    @apply bg-accent text-white hover:bg-copper-600 shadow-md hover:shadow-accent transform hover:-translate-y-0.5 active:scale-95;
   }
 
   .btn-hero-secondary {
-    @apply btn-hero bg-white/10 text-white border border-white/25 hover:bg-white/20 hover:border-white/40 backdrop-blur-sm active:scale-95;
+    /* Inlined btn-hero — Tailwind v4 disallows @apply of custom classes */
+    @apply inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-3.5 font-semibold rounded-xl transition-all duration-300 text-sm;
+    @apply bg-white/10 text-white border border-white/25 hover:bg-white/20 hover:border-white/40 backdrop-blur-sm active:scale-95;
   }
 
   .page-hero {
