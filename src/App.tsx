@@ -12,6 +12,7 @@ import CallForPapers from "./pages/CallForPapers";
 import ImportantDates from "./pages/ImportantDates";
 import RegistrationFees from "./pages/RegistrationFees";
 import Committee from "./pages/Committee";
+import AdvisoryCommittee from "./pages/AdvisoryCommittee";
 import Venue from "./pages/Venue";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/conference/call-for-papers" element={<CallForPapers />} />
             <Route path="/conference/important-dates" element={<ImportantDates />} />
             <Route path="/conference/registration-fees" element={<RegistrationFees />} />
+            <Route path="/conference/advisory-committee" element={<AdvisoryCommittee />} />
             <Route path="/conference/committee" element={<Committee />} />
             <Route path="/venue" element={<Venue />} />
             <Route path="/contact" element={<Contact />} />

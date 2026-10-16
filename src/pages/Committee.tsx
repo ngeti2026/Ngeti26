@@ -38,7 +38,7 @@ const Committee = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <SectionHeader title="General Chairs" />
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
               {committeeMembers.generalChairs.map((member, index) => (
                 <motion.div
                   key={`general-${index}`}
@@ -94,16 +94,17 @@ const Committee = () => {
             </div>
 
             <SectionHeader title="Technical Program Committee Co-Chairs" />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
               {committeeMembers.tpcCoChairs.map((member, index) => (
                 <motion.div
                   key={`tpc-co-${index}`}
+                  className="w-72 flex flex-col"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <CommitteeCard member={member} />
+                  <CommitteeCard member={member} className="h-full" />
                 </motion.div>
               ))}
             </div>

@@ -101,6 +101,36 @@ export const foreignRegistrationFees = [
   { category: "Listener/Second Author", ieee: "$150", nonIeee: "$200" },
 ];
 
+export const advisoryCommittee = [
+  {
+    name: "Dr. M. V. Rajesh Maliyeackal",
+    designation: "Director",
+    affiliation: "Institute of Human Resources Development, Kerala",
+  },
+  {
+    name: "Dr. Abu Sebastian",
+    affiliation: "IBM Research, Zurich, Switzerland",
+  },
+  {
+    name: "Dr. Abdulla P.",
+    designation: "Principal",
+    affiliation: "School of Engineering, CUSAT, Kochi",
+  },
+  {
+    name: "Dr. Jasmine Joseph Innocent",
+    affiliation: "Kiddle Global Solutions, Melbourne",
+  },
+  {
+    name: "Dr. Rajiv Nandan Rai",
+    affiliation: "IIT Kharagpur",
+  },
+  {
+    name: "Riya George",
+    designation: "Scientist ‘G’",
+    affiliation: "ADA, DRDO, Bengaluru",
+  },
+];
+
 export const committeeMembers = {
   generalChairs: [
     {
@@ -113,11 +143,16 @@ export const committeeMembers = {
       designation: "Member, Board of Governors, IEEE Photonics Society and Professor",
       affiliation: "Zhejiang Ocean University, China",
     },
+    {
+      name: "Dr. Naveen Jacob",
+      designation: "Principal",
+      affiliation: "Viswajyothi College of Engineering and Technology",
+    },
   ],
   generalCoChairs: [
     {
-      name: "Dr. Shine George",
-      designation: "Assoc.Professor & HoD (CE)",
+      name: "Mr. Somy P Mathew",
+      designation: "Vice Principal",
       affiliation: "Viswajyothi College of Engineering and Technology",
     },
   ],
@@ -136,10 +171,6 @@ export const committeeMembers = {
   tpcCoChairs: [
     {
       name: "Dr. Shanmugesh K",
-      affiliation: "Viswajyothi College of Engineering and Technology",
-    },
-    {
-      name: "Dr. Naveen Jacob",
       affiliation: "Viswajyothi College of Engineering and Technology",
     },
     {
@@ -231,7 +262,8 @@ export const navLinks = [
       { href: "/conference/call-for-papers", label: "Call for Papers" },
       { href: "/conference/important-dates", label: "Important Dates" },
       { href: "/conference/registration-fees", label: "Registration Fees" },
-      { href: "/conference/committee", label: "Committee" },
+      { href: "/conference/advisory-committee", label: "Advisory Committee" },
+      { href: "/conference/committee", label: "Organizing Committee" },
     ]
   },
   { href: "/venue", label: "Venue" },
