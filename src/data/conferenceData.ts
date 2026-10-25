@@ -267,6 +267,7 @@ export const navLinks = [
     ]
   },
   { href: "/venue", label: "Venue" },
+  { href: "/conference/registration-fees", label: "Register Now", highlight: true },
   { href: "/contact", label: "Contact" },
 ];
 

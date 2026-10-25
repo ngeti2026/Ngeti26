@@ -158,45 +158,45 @@ const About = () => {
             />
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {[
-                { 
-                  icon: <Lightbulb className="w-6 h-6" />, 
+                {
+                  icon: <Lightbulb className="w-6 h-6" />,
                   title: (
                     <>
                       <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 1</span>
                       <span>AI & Advanced Computing</span>
                     </>
-                  ), 
-                  desc: "GenAI, LLMs, quantum computing, autonomous systems, and ethical AI regulation." 
+                  ),
+                  desc: "GenAI, LLMs, quantum computing, autonomous systems, and ethical AI regulation."
                 },
-                { 
-                  icon: <Globe className="w-6 h-6" />, 
+                {
+                  icon: <Globe className="w-6 h-6" />,
                   title: (
                     <>
                       <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 2</span>
                       <span>Computer Science Trends</span>
                     </>
-                  ), 
-                  desc: "Data mining, big data, IoT, blockchain, and smart mobility applications." 
+                  ),
+                  desc: "Data mining, big data, IoT, blockchain, and smart mobility applications."
                 },
-                { 
-                  icon: <Target className="w-6 h-6" />, 
+                {
+                  icon: <Target className="w-6 h-6" />,
                   title: (
                     <>
                       <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 3</span>
                       <span>Communication & VLSI</span>
                     </>
-                  ), 
-                  desc: "Next-gen wireless, VLSI, embedded systems, and remote sensing applications." 
+                  ),
+                  desc: "Next-gen wireless, VLSI, embedded systems, and remote sensing applications."
                 },
-                { 
-                  icon: <Award className="w-6 h-6" />, 
+                {
+                  icon: <Award className="w-6 h-6" />,
                   title: (
                     <>
                       <span className="text-xs font-semibold text-accent uppercase tracking-wider block mb-1">Track 4</span>
                       <span>Power & Automation</span>
                     </>
-                  ), 
-                  desc: "Renewable energy, nuclear energy security, smart grids, EVs, and industrial robotics." 
+                  ),
+                  desc: "Renewable energy, nuclear energy security, smart grids, EVs, and industrial robotics."
                 },
               ].map((item, index) => (
                 <motion.div

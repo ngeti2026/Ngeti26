@@ -63,6 +63,14 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+              ) : (link as any).highlight ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="px-5 py-2 text-sm font-semibold rounded-lg text-white bg-gradient-to-r from-accent to-primary shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
+                >
+                  {link.label}
+                </Link>
               ) : (
                 <Link
                   key={link.href}
@@ -145,6 +153,15 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
+            ) : (link as any).highlight ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-3 rounded-lg text-sm font-semibold text-white text-center bg-gradient-to-r from-accent to-primary shadow-md transition-all duration-200"
+              >
+                {link.label}
+              </Link>
             ) : (
               <Link
                 key={link.href}

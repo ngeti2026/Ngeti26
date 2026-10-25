@@ -201,6 +201,25 @@ const RegistrationFees = () => {
                   </ul>
                 </motion.div>
               </div>
+
+              {/* Register Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="mt-10 text-center"
+              >
+                <a
+                  href="https://forms.gle/3yeYSSKTHnhdbNSz7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-10 py-4 text-lg font-bold rounded-xl text-white bg-gradient-to-r from-accent to-primary shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  Register
+                </a>
+              </motion.div>
             </div>
           </div>
         </section>
