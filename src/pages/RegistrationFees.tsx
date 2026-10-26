@@ -122,7 +122,7 @@ const RegistrationFees = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader title="Registration Details" />
+              <SectionHeader title="Registration Guidelines" />
 
               <div className="grid md:grid-cols-2 gap-6">
                 <motion.div
@@ -198,6 +198,26 @@ const RegistrationFees = () => {
                       <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                       <span className="leading-relaxed">Registration fee is non-refundable</span>
                     </li>
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">Each author registration is valid for one paper.</span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">If more than one author of an accepted paper wishes to attend the conference, each author must register separately by paying the applicable registration fee.</span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">Faculty members and students registering under the respective faculty/student categories must bring a valid faculty or student ID card to the conference.</span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">Please retain a copy of the transaction ID for future reference and to track your payment and registration</span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                      <span className="leading-relaxed">NGETI 2026, the organizing institute (VJCET), its Organizing Committee, the IEEE India Council, and the IEEE Kerala Section shall not be held responsible for any loss, financial or otherwise, arising from improper online transactions.</span>
+                    </li>
                   </ul>
                 </motion.div>
               </div>
@@ -219,6 +239,10 @@ const RegistrationFees = () => {
                   <ExternalLink className="w-5 h-5" />
                   Register
                 </a>
+                <p className="mt-4 text-sm text-muted-foreground italic">
+                  <Info className="w-4 h-4 inline-block mr-1 align-text-bottom" />
+                  Please go through the guidelines given on registration page before registration.
+                </p>
               </motion.div>
             </div>
           </div>
